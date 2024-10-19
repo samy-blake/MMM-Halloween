@@ -1,0 +1,15 @@
+.MMM-Halloween {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.halloween-fullscreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120%;
+  transform: translateX(-10%);
+  object-fit: contain;
+}
