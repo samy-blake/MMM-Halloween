@@ -34,6 +34,8 @@ Module.register("MMM-Halloween", {
   },
 
   notificationReceived(notification, payload, sender) {
+    if (!this.isValidActive()) return;
+
     if (notification !== "USER_PRESENCE") return;
     if (!payload && halloweenTimeout) return clearTimeout(this.halloweenTimeout);
     if (this.halloweenTimeout !== null) return;
